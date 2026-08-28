@@ -81,19 +81,22 @@ h3 {
     height: 90px;
     border-radius: 50%;
     background-image: linear-gradient(to bottom right, blue, purple); 
+    animation: float 3s ease-in-out 0ms infinite;
 }
 
 .box-2 .icon-container {
     width: 90px;
     height: 90px;
     border-radius: 50%;
-    background-image: linear-gradient(to bottom right, yellow, orange); 
+    background-image: linear-gradient(to bottom right, yellow, orange);
+    animation: float 3s ease-in-out 200ms infinite; 
 }
 .box-3 .icon-container {
     width: 90px;
     height: 90px;
     border-radius: 50%;
     background-image: linear-gradient(to bottom right, rgb(0, 255, 170), rgb(0, 132, 255)); 
+    animation: float 3s ease-in-out 400ms infinite;
 }
 
 .box-1:hover {
@@ -104,4 +107,24 @@ h3 {
 }
 .box-3:hover {
     transform: translate(-10px, -10px);
+}
+
+@keyframes float {
+    0%{
+        transform: translateY(0px);
+        box-shadow: 0 8px 6px -6px rgba(74, 74, 238, 0.356);
+      
+    }
+
+    50%{
+        transform: translateY(-10px);
+       box-shadow: 0 8px 6px -6px rgba(74, 74, 238, 0.356);
+    }
+
+    100%{
+        transform: translateY(0px);
+        box-shadow: 0 8px 6px -6px rgba(74, 74, 238, 0.356);
+        
+    }
+
 }
