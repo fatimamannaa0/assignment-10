@@ -64,6 +64,7 @@ p {
 h3 {
     font-size: 1.7rem;
     padding-bottom: 30px;
+    text-align: center;
 }
 
 .icon-container {
@@ -118,7 +119,7 @@ h3 {
 
     50%{
         transform: translateY(-10px);
-       box-shadow: 0 8px 6px -6px rgba(74, 74, 238, 0.356);
+        box-shadow: 0 8px 6px -6px rgba(74, 74, 238, 0.356);
     }
 
     100%{
@@ -127,4 +128,17 @@ h3 {
         
     }
 
+}
+
+@media (orientation: portrait) {
+    #title, #description {
+        font-size: 1.1rem;
+    }
+
+    
+   
+  
+    #title, #description, .box-1, .box-2, .box-3 {
+        grid-area: auto;
+    }
 }
